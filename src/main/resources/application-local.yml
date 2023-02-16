@@ -1,0 +1,23 @@
+--- 
+logging: 
+  level: 
+    com: 
+      mastercard: 
+        ips: 
+          idr: 
+            report: DEBUG
+        refarch: INFO
+spring: 
+  datasource: 
+    initialization-mode: NEVER
+    password: nbmax32$
+    tomcat: 
+      max-active: 5
+      max-wait: 10000
+      test-on-borrow: true
+    url: "jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=IPSPV-DEVSTL.mastercard.int)(PORT=1527)))(CONNECT_DATA=(SERVICE_NAME=dipv1s_online_serv)))"
+    username: ifw_app
+  redis: 
+    host: localhost
+    password:
+    port: 6379

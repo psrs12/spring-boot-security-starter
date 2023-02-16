@@ -1,0 +1,6 @@
+
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.mastercard.pts.pv.issuer.ui.services.security.config.PvMethodSecurityConfig,\
+com.mastercard.pts.pv.issuer.ui.services.security.config.PvWebSecurityConfig,\
+com.mastercard.pts.pv.issuer.ui.services.security.config.PvLocalMethodSecurityConfig,\
+com.mastercard.pts.pv.issuer.ui.services.security.config.PvLocalWebSecurityConfig

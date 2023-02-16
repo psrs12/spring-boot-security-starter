@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<saml:Assertion xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="Assertion-uuid3d7eddc9-0176-1a08-957c-abaf5e83a184" IssueInstant="2020-12-07T13:58:13Z" Version="2.0">
+   <saml:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">MasterCard</saml:Issuer>
+   <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="uuid3d7eddcb-0176-17e2-8b14-abaf5e83a184">
+      <ds:SignedInfo>
+         <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+         <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512" />
+         <ds:Reference URI="#Assertion-uuid3d7eddc9-0176-1a08-957c-abaf5e83a184">
+            <ds:Transforms>
+               <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+               <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#">
+                  <xc14n:InclusiveNamespaces xmlns:xc14n="http://www.w3.org/2001/10/xml-exc-c14n#" PrefixList="saml xs xsi" />
+               </ds:Transform>
+            </ds:Transforms>
+            <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+            <ds:DigestValue>GTitEHgfVjJNg9e6380YXcHzFAbDdwNlsDCcfkwiO0GvXjaOZvfyWXfzynKzfCM7CbziBODhKWx0PNks6VIQuQ==</ds:DigestValue>
+         </ds:Reference>
+      </ds:SignedInfo>
+      <ds:SignatureValue>pcExruFVuleLOyzKNMH96SllyX/RzZZOpYAczSBRbtllj36CFe5FQGxW92PtWvORi0bkRXMs+Q7XRuGO8CuG1HCICPCvnDhe3gYMPGxTDtheQzoAwK0Rq0M1SmsNjus6mgPOKroTRanLNLY27MMjHsey+jXTiPeHNsEYt6VYk6PbP7UX9o8GGPJX6A6LbcSJjiZ7vTy3FE0CSLUpOmFoEJe9vHAYZnr+HK9Fk2Nui2Revvzy68AcBmFBELoxLQykHZ1erZU8P6826WkG9MkSUUMUf0eW9VIWvq/JsqFHOX24n4Ars0aLcNKqI2XLpFGBjx88Dysc2PKeuOLHlMPfpw==</ds:SignatureValue>
+      <ds:KeyInfo>
+         <ds:X509Data>
+            <ds:X509Certificate>MIIEFTCCAv2gAwIBAgIRAKCPsw0RNWln/2K9XWIR6ykwDQYJKoZIhvcNAQELBQAwgYUxCzAJBgNVBAYTAkJFMRwwGgYDVQQKExNNYXN0ZXJDYXJkIFdvcmx3aWRlMSQwIgYDVQQLExtHbG9iYWwgSW5mb3JtYXRpb24gU2VjdXJpdHkxMjAwBgNVBAMTKU1hc3RlckNhcmQgSVRGIE1lc3NhZ2VzIFNpZ25pbmcgU3ViIENBIEcyMB4XDTE3MDYyNzA4NDM0MFoXDTI1MDIxMDE2Mjg0OVowgaYxJjAkBgNVBAMTHWNhc3RzLnNpZ25lci5pc2FtLm1jbG9jYWwuaW50MRYwFAYDVQQLEw1CMkIgU2lnbmVyIDAwMS4wLAYDVQQKEyVNYXN0ZXJDYXJkIFdvcmxkV2lkZSAtIE1lc3NhZ2VTaWduaW5nMRQwEgYDVQQHEwtTYWludCBMb3VpczERMA8GA1UECBMITWlzc291cmkxCzAJBgNVBAYTAlVTMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAubWvz8qnf1QSegcgqeqrzbxThk4hTh1SrR5lyFuZYJJlv8Gu7fcMyyigA6PNTHqqvRhOJYMV0AFdth9PsbcRCQwXiFyKCh/Z0KmUpkeNNm/Bo7sNHAEn7KiHAOa9UnnbKHwCAEEP+D10AcHHNIi+MeOzL+CpQs/XC7GbG/hikm18OTFGKkxL9ULwz0zf1AH05TVfhsxVczYxrI69wtqHnYR/2BaPouobIRyo/DKnwNMSJ5Kw8llXlX2k/wk6G5b8cd5i25qhoNacJH+jz+/zdO63nR4V4pS9nDzDwCjUT4160UNN58QZKTN6JdoxcgQ/5CQ+rI7iOjJ3VWxO32nFpQIDAQABo10wWzAOBgNVHQ8BAf8EBAMCB4AwCQYDVR0TBAIwADAfBgNVHSMEGDAWgBRbPEBSD+5PgOubatSG2Ytg3H9YVTAdBgNVHQ4EFgQUFVbo2dhk3egfOl+43I29BsygcFwwDQYJKoZIhvcNAQELBQADggEBACrSIYh8ZD4KAkuhqZrvO1/i/pyR4BzYk6DTSLQaUs4w1BNPD/E0S7smphiWtHsR7xayaEKY5xUgZ3b0XMNBsdvLZaZyCz1AHPOY8ZfwgnQvfvVIKRSjmDV8TdDsXIOlEVhOBDEGt+rCzfPgJ1pIBIHCfvbpXoMZT3hLo/PtT5K8JzD1icIlsBzzS+J4Vs+tX/C9B0sk+wd5UdKzSJqekmXLmqsAC31MjrkcIhNBKM6hMmGWU4LL6a6owutjsWzrcabVkHXpNt0d+SdWu13sICauMvFu2I2MuxkTDctkhhVBV4Arf94jgRKuiwpbPG5mQCf7roM1HZkhh6p66hzM/co=</ds:X509Certificate>
+         </ds:X509Data>
+      </ds:KeyInfo>
+   </ds:Signature>
+   <saml:Subject>
+      <saml:NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress">69cd0dc5ebd9ed345ac224255cc5cea5</saml:NameID>
+      <saml:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+         <saml:SubjectConfirmationData NotOnOrAfter="2020-12-07T14:13:13Z" />
+      </saml:SubjectConfirmation>
+   </saml:Subject>
+   <saml:Conditions NotBefore="2021-03-01T00:57:13Z" NotOnOrAfter="2021-03-02T14:13:13Z">
+      <saml:AudienceRestriction>
+         <saml:Audience>https://stage.csrhw.mastercardworldwide.isam.com/csrpcf/DEFAULT_WEBSEAL_IVCRED_SAML2_GZIP_B64_ISSUE_TrustChain</saml:Audience>
+      </saml:AudienceRestriction>
+   </saml:Conditions>
+   <saml:AuthnStatement AuthnInstant="2020-12-07T13:58:13Z">
+      <saml:AuthnContext>
+         <saml:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:Password</saml:AuthnContextClassRef>
+      </saml:AuthnContext>
+   </saml:AuthnStatement>
+   <saml:AttributeStatement>
+      <saml:Attribute Name="issuerGroupID" NameFormat="urn:oasis:names:tc:SAML:2.0:assertion">
+         <saml:AttributeValue xsi:type="xs:string">0</saml:AttributeValue>
+      </saml:Attribute>
+      <saml:Attribute Name="mail" NameFormat="urn:oasis:names:tc:SAML:2.0:assertion">
+         <saml:AttributeValue xsi:type="xs:string">Srinivas.Peddada@mastercard.com</saml:AttributeValue>
+      </saml:Attribute>
+      <saml:Attribute Name="membership" NameFormat="urn:oasis:names:tc:SAML:2.0:assertion">
+         <saml:AttributeValue xsi:type="xs:string">grp-PTS-MC_CSR_Manager</saml:AttributeValue>
+         <saml:AttributeValue xsi:type="xs:string">grp-PTS-MC_Security_Administrator</saml:AttributeValue>
+         <saml:AttributeValue xsi:type="xs:string">grp-PTS-MC_PV_iDash_Group_Internal_Ops</saml:AttributeValue>
+         <saml:AttributeValue xsi:type="xs:string">grp-PTS-MPTS_Analytics_View_PAN</saml:AttributeValue>
+         <saml:AttributeValue xsi:type="xs:string">grp-PTS-MC_CSR_Cardholder_Support_Lead</saml:AttributeValue>
+         <saml:AttributeValue xsi:type="xs:string">grp-PTS-MPTS_Analytics_Issuer_User</saml:AttributeValue>
+         <saml:AttributeValue xsi:type="xs:string">grp-PTS-MPTS_Analytics_User_Admin</saml:AttributeValue>
+         <saml:AttributeValue xsi:type="xs:string">grp-PTS-MPTS_Analytics_Dispute_User</saml:AttributeValue>
+         <saml:AttributeValue xsi:type="xs:string">grp-PTS-MC_PV_iDash_Level_Admin</saml:AttributeValue>
+         <saml:AttributeValue xsi:type="xs:string">grp-PTS-MPTS_Analytics_Issuer_Config_Admin</saml:AttributeValue>
+         <saml:AttributeValue xsi:type="xs:string">grp-PTS-MPTS_Analytics_Fraud_User</saml:AttributeValue>
+         <saml:AttributeValue xsi:type="xs:string">grp-PTS-MPTS_Analytics_Professional_Services</saml:AttributeValue>
+         <saml:AttributeValue xsi:type="xs:string">grp-PTS-MPTS_Analytics_Admin</saml:AttributeValue>
+         <saml:AttributeValue xsi:type="xs:string">grp-PTS-MC_CSR_ATM_Lead</saml:AttributeValue>
+         <saml:AttributeValue xsi:type="xs:string">grp-PTS-MC_Implementation_Manager</saml:AttributeValue>
+         <saml:AttributeValue xsi:type="xs:string">grp-PTS-CSR_Segmentation_Manager</saml:AttributeValue>
+         <saml:AttributeValue xsi:type="xs:string">grp-PTS-MC_Beta_User</saml:AttributeValue>
+         <saml:AttributeValue xsi:type="xs:string">grp-PTS-MC_Inquiry_Only</saml:AttributeValue>
+         <saml:AttributeValue xsi:type="xs:string">grp-PTS-MC_CSR_New_Accounts_Specialist</saml:AttributeValue>
+         <saml:AttributeValue xsi:type="xs:string">grp-PTS-Enhanced_Parameterized_Reports</saml:AttributeValue>
+         <saml:AttributeValue xsi:type="xs:string">grp-PTS-CSR_Segmentation_User</saml:AttributeValue>
+         <saml:AttributeValue xsi:type="xs:string">grp-PTS-MC_PV_iDash_Level_Analyst</saml:AttributeValue>
+         <saml:AttributeValue xsi:type="xs:string">0</saml:AttributeValue>
+         <saml:AttributeValue xsi:type="xs:string">PTS_DEFAULT_POLICY_GROUPS</saml:AttributeValue>
+      </saml:Attribute>
+      <saml:Attribute Name="sn" NameFormat="urn:oasis:names:tc:SAML:2.0:assertion">
+         <saml:AttributeValue xsi:type="xs:string">Peddada</saml:AttributeValue>
+      </saml:Attribute>
+      <saml:Attribute Name="givenName" NameFormat="urn:oasis:names:tc:SAML:2.0:assertion">
+         <saml:AttributeValue xsi:type="xs:string">Srinivas</saml:AttributeValue>
+      </saml:Attribute>
+      <saml:Attribute Name="b2balias" NameFormat="urn:oasis:names:tc:SAML:2.0:assertion">
+         <saml:AttributeValue xsi:type="xs:string">0.e032967</saml:AttributeValue>
+      </saml:Attribute>
+      <saml:Attribute Name="companyGroupID" NameFormat="urn:oasis:names:tc:SAML:2.0:assertion">
+         <saml:AttributeValue xsi:type="xs:string">0</saml:AttributeValue>
+      </saml:Attribute>
+      <saml:Attribute Name="userDN" NameFormat="urn:oasis:names:tc:SAML:2.0:assertion">
+         <saml:AttributeValue xsi:type="xs:string">cn=69cd0dc5ebd9ed345ac224255cc5cea5,ou=isf,ou=pts,dc=mastercard,dc=b2b</saml:AttributeValue>
+      </saml:Attribute>
+      <saml:Attribute Name="issuerID" NameFormat="urn:oasis:names:tc:SAML:2.0:assertion">
+         <saml:AttributeValue xsi:type="xs:string">0</saml:AttributeValue>
+      </saml:Attribute>
+      <saml:Attribute Name="companyID" NameFormat="urn:oasis:names:tc:SAML:2.0:assertion">
+         <saml:AttributeValue xsi:type="xs:string">0</saml:AttributeValue>
+      </saml:Attribute>
+   </saml:AttributeStatement>
+</saml:Assertion>

@@ -1,0 +1,47 @@
+package com.mastercard.pts.pv.issuer.ui.services.security.config;
+
+import com.mastercard.pts.pv.issuer.ui.services.security.authorization.EntitlementPermissionEvaluator;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.AutoConfigureAfter;
+import org.springframework.boot.autoconfigure.AutoConfigureOrder;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+import org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
+import org.springframework.core.Ordered;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler;
+import org.springframework.security.access.expression.method.MethodSecurityExpressionHandler;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
+import org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration;
+
+import com.mastercard.pts.pv.issuer.ui.services.security.dao.AuthorizationDetailsDao;
+
+
+@Configuration
+@AutoConfigureAfter(JpaRepositoriesAutoConfiguration.class)
+@ConditionalOnClass(name="com.mastercard.pts.pv.issuer.ui.services.security.model.UserIdentity")
+@EnableJpaRepositories(basePackages = { "com.mastercard.pts.pv.issuer.ui.services.security.dao" })
+@AutoConfigureOrder(Ordered.HIGHEST_PRECEDENCE)
+@EnableGlobalMethodSecurity(prePostEnabled = true)
+@ConditionalOnProperty(prefix = "pv",name = "config.security.enabled", matchIfMissing = true)
+@EntityScan("com.mastercard.pts.pv.issuer.ui.services.security.dao")
+public class PvMethodSecurityConfig extends GlobalMethodSecurityConfiguration {
+
+    @Autowired(required = false)
+    private AuthorizationDetailsDao authorizationDetailsDao;
+
+    private EntitlementPermissionEvaluator entitlementPermissionEvaluator;
+
+    @Override
+    protected MethodSecurityExpressionHandler createExpressionHandler() {
+        DefaultMethodSecurityExpressionHandler expressionHandler =
+                new DefaultMethodSecurityExpressionHandler();
+        expressionHandler.setPermissionEvaluator(new EntitlementPermissionEvaluator(authorizationDetailsDao));
+        return expressionHandler;
+    }
+
+}

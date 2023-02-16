@@ -1,0 +1,10 @@
+{
+	"properties": [
+		{
+			"name": "pv.config.security.enabled",
+			"type": "java.lang.Boolean",
+			"description": "Set this property to false if you wish to disable security. Don't do this in production.",
+			"defaultValue": true
+		}
+	]
+}

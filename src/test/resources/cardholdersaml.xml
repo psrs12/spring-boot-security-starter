@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<saml:Assertion xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="Assertion-uuid3d7eddc9-0176-1a08-957c-abaf5e83a184" IssueInstant="2020-12-07T13:58:13Z" Version="2.0">
+       <saml:Issuer
+             Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">MasterCard</saml:Issuer>
+       <ds:Signature
+             xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+             Id="uuid28854955-0177-160b-b572-b626041428e4">
+             <ds:SignedInfo>
+                    <ds:CanonicalizationMethod
+                           Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></ds:CanonicalizationMethod>
+                    <ds:SignatureMethod
+                           Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"></ds:SignatureMethod>
+                    <ds:Reference
+                           URI="#Assertion-uuid28854954-0177-14f8-959c-b626041428e4">
+                           <ds:Transforms>
+                                 <ds:Transform
+                                        Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform>
+                                 <ds:Transform
+                                        Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#">
+                                        <xc14n:InclusiveNamespaces
+                                               xmlns:xc14n="http://www.w3.org/2001/10/xml-exc-c14n#"
+                                               PrefixList="saml xs xsi">
+										</xc14n:InclusiveNamespaces>
+                                 </ds:Transform>
+                           </ds:Transforms>
+                           <ds:DigestMethod
+                                 Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></ds:DigestMethod>
+                           <ds:DigestValue>yFbyTM4DjUgT9RhLJGczFDpXuTQF
+                                  UPk717dvplLqvkmNmmRxVSmvRcC/tCeEHXnV9olBcpAfnfQWQKy6isI4xg==
+                           </ds:DigestValue>
+                    </ds:Reference>
+             </ds:SignedInfo>
+             <ds:SignatureValue>ToMZdAMaYJbWhsxu6BFxYxrkp6rdZH3Fp/ByUB947wlDji8h0mIPLrouLsP5Wx
+                    8ewHpsLQL1ta3Z9KkImaLHkjQlfKBI1CmU6VfrKGK2S+T/Q83e7NS6kL5XxwDoKSyxeHkfEffsNTHBE7wyx9VL0w5e3GtmBDObd/qRHaziyIiXU+1XNziUawFjZ/c959+WAiHQ2aKoMTYUqNva9ttMk1BFKyYSau09HPK0ri2BBJhX7EqOEy4gXmzcGkB
+                    r8HV8DfTTVPsXOG+k8+6JiJbrjyauJi4gn+BpVSCeGY5MkR2XUURG9QMh9PJ7lGAz+PDDChRtpjXUI5HXlb0fIqPD2Q==
+                    </ds:SignatureValue>
+                    <ds:KeyInfo>
+                           <ds:X509Data>
+                                  <ds:X509Certificate>MIIERTCCAy2gAwIBAgIRAIJYz7HtVTZ
+                                 jWrkjedPP4LMwDQYJKoZIhvcNAQELBQAwgYUxCzAJBgNVBAYTAkJFMRwwGgYDVQQKExNNYXN0ZXJDYXJkIFdvcmx3aWRlMSQwIgYDVQQLExtHbG9iYWwgSW5mb3JtYXRpb24gU2VjdXJpdHkxMjAwBgNVBAMTKU1hc3RlckNhcmQgSVRGIE1lc3NhZ2Vz
+                                 IFNpZ25pbmcgU3ViIENBIEcyMB4XDTE2MTExNzA4MzE1MFoXDTI1MDIxMDE2Mjg0OVowgdYxEzARBgoJkiaJk/IsZAEZFgNjb20xGjAYBgoJkiaJk/IsZAEZFgptYXN0ZXJjYXJkMQswCQYDVQQGEwJVUzERMA8GA1UECBMITWlzc291cmkxFDASBgNVB
+                                 AcTC1NhaW50IExvdWlzMTEwLwYDVQQKEyhNYXN0ZXJDYXJkIFdvcmxkV2lkZSAtIE1lc3NhZ2VTaWduaW5nIEhXMREwDwYDVQQLEwhTaWduZXIwMDEnMCUGA1UEAxMec3RhZ2UuY3NzdHMuc2lnbmVyLm1jbG9jYWwuaW50MIIBIjANBgkqhkiG9w0BAQ
+                                 EFAAOCAQ8AMIIBCgKCAQEA6g+1zs5Yog59C5KpdM93y3tTxCjA/Ed0FwuwPAHZJd/SdX9csLyuEMW4uCCNRFgCnLu+jO8sDIrzzOFCd+2Ld8hKtIa5akW9w3QNN3bY0DLq8CV3HtyWmUY5q9iJFvJN8x/gpYVdA1pkWLIBSxrDveulSYPyZNSOw7IeLEo
+                                 7l62AKaa3wsK5eJeMugddH+9UYC+35QurKbbr9b37mxWjxF1DxBv1zP4ZKniK7S1naElS9Wy7tPmjxJgAvx2zusAgj1Uc4i2LEkCafZnmYtPqS8ROzRMooVu0K4J/zHaKZKeconiq5PLNSMaQ4u8bkr6PhqTQQgmmsM1ddEbntDSgOwIDAQABo10wWzAf
+                                 BgNVHSMEGDAWgBRbPEBSD+5PgOubatSG2Ytg3H9YVTAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIHgDAdBgNVHQ4EFgQUsbLArQS22qJyewGOu9b+gIaYHcYwDQYJKoZIhvcNAQELBQADggEBAKk1faPWIyFLw7Mup90C5mYaO1QQ1oFbVIvjQosrT40dm
+                                 QKVw/U4xOLSJK2EdfwW7wiA+8IgYBzZPGREsw/sFIdyGr1v0M5mJSo4SZseWDjwDpoAuwJnF92oGIf5A6Rd48rggLgoST/1r7xKZHTF8jV7tC1Z6razLx/2UzjR25clP04S2mTUmXwCSoCjuwetMYHRLpMm3K+78Lxq0Yx7c+YrDtrxy+DlzCq/I8LtrD
+                                 0ZxXkzLvYyLV++aTPaaw7mW1++Sa9WUXAroGiL37PVpPG8IDmkfDTJ5PEXsGrtrghD8OJi7bxLATLJ7MqN3wIp2qPvgUEZFj0LoM8GKnXqOM0=
+                                 </ds:X509Certificate>
+                           </ds:X509Data>
+                    </ds:KeyInfo>
+       </ds:Signature>
+       <saml:Subject>
+             <saml:NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress">
+                    989a5de3a8a15b81ef158b2a1b6eabe0
+             </saml:NameID>
+                    <saml:SubjectConfirmation
+                           Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+                           <saml:SubjectConfirmationData
+                                 NotOnOrAfter="2021-01-22T06:15:59Z"></saml:SubjectConfirmationData>
+                    </saml:SubjectConfirmation>
+       </saml:Subject>
+       <saml:Conditions NotBefore="2021-03-01T05:14:59Z"
+             NotOnOrAfter="2021-03-31T06:15:59Z">
+             <saml:AudienceRestriction>
+             <saml:Audience>https://stage.cardholder.mastercardworldwide.com/accessprepaid
+                    </saml:Audience>
+             </saml:AudienceRestriction>
+             </saml:Conditions>
+             <saml:AuthnStatement
+                    AuthnInstant="2021-01-22T05:15:59Z">
+                    <saml:AuthnContext>
+                           <saml:AuthnContextClassRef>
+                                  urn:oasis:names:tc:SAML:2.0:ac:classes:Password
+                           </saml:AuthnContextClassRef>
+                    </saml:AuthnContext>
+             </saml:AuthnStatement>
+             <saml:AttributeStatement>
+                    <saml:Attribute Name="sn"
+                           NameFormat="urn:oasis:names:tc:SAML:2.0:assertion">
+                           <saml:AttributeValue xsi:type="xs:string">SIMATOVIC
+                           </saml:AttributeValue>
+                    </saml:Attribute>
+                    <saml:Attribute Name="roles"
+                           NameFormat="urn:oasis:names:tc:SAML:2.0:assertion">
+                           <saml:AttributeValue xsi:type="xs:string">pv-prepaid-cardholder
+                           </saml:AttributeValue>
+                    </saml:Attribute>
+                    <saml:Attribute Name="dn"
+                           NameFormat="urn:oasis:names:tc:SAML:2.0:assertion">
+                           <saml:AttributeValue xsi:type="xs:string">cn=989a5de3a8a15b81ef158b2a
+                                 1b6eabe0,ou=isf-pts,ou=consumerusers,dc=mastercard,dc=com
+                           </saml:AttributeValue>
+                    </saml:Attribute>
+                    <saml:Attribute Name="givenName"
+                           NameFormat="urn:oasis:names:tc:SAML:2.0:assertion">
+                           <saml:AttributeValue xsi:type="xs:string">
+                                 ALMAZ
+                           </saml:AttributeValue>
+                    </saml:Attribute>
+                    <saml:Attribute Name="alias"
+                           NameFormat="urn:oasis:names:tc:SAML:2.0:assertion">
+                           <saml:AttributeValue xsi:type="xs:string">0.e032967</saml:AttributeValue>
+                    </saml:Attribute>
+                    <saml:Attribute Name="issuerId"
+                           NameFormat="urn:oasis:names:tc:SAML:2.0:assertion">
+                           <saml:AttributeValue xsi:type="xs:string">isf-pts
+                           </saml:AttributeValue>
+                    </saml:Attribute>
+             </saml:AttributeStatement>
+</saml:Assertion>
+
